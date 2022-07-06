@@ -8,6 +8,6 @@ COPY *.conf /root/
 RUN sh install.sh
 # 复制php.ini
 COPY ./php.ini /etc/php7/
-VOLUME /data/wwwroot/default/data
+VOLUME /data/wwwroot/default
 EXPOSE 80
 CMD ["/usr/sbin/run.sh"]
