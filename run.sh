@@ -7,8 +7,11 @@
 
 #start redis
 redis-server /etc/redis.conf
+sleep 10
 #start php-fpm
 php-fpm7 -RD
+sleep 5
 #start nginx
 /usr/sbin/nginx
+sleep 5
 tail -f /var/log/nginx/error.log
