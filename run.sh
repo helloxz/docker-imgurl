@@ -3,7 +3,7 @@
 ##########		update:2021/03/22				##########
 ##########		author:xiaoz<xiaoz93@outlook.com>	######
 
-onenav_path='/data/wwwroot/default'
+#onenav_path='/data/wwwroot/default'
 
 #start redis
 redis-server /etc/redis.conf
