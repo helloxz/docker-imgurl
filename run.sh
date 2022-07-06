@@ -6,7 +6,7 @@
 onenav_path='/data/wwwroot/default'
 
 #start redis
-redis-server
+redis-server /etc/redis.conf
 #start php-fpm
 php-fpm7 -RD
 #start nginx

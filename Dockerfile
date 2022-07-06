@@ -1,4 +1,4 @@
-FROM redis:6-alpine3.16
+FROM redis:6-alpine3.13
 
 WORKDIR /root
 #复制启动文件

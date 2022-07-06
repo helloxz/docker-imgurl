@@ -33,7 +33,7 @@ cp /root/www.conf /etc/php7/php-fpm.d/
 cp /root/nginx.conf /etc/nginx/
 cp /root/run.sh /usr/sbin/
 #复制redis配置文件
-cp /root/redis.conf /data/
+cp /root/redis.conf /etc/
 #cp /root/php.ini /etc/php7/
 #启动脚本赋予权限
 chmod +x /usr/sbin/run.sh
