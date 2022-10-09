@@ -2,12 +2,18 @@ version: '3'
 services: 
   imgurl: 
     image: helloz/imgurl
+    nmame: imgurl
     volumes:
       - ./imgurl:/data/wwwroot/default
+    ports:
+      - "880:80"
     restart:
       always
   mysql57:
     image: mysql:5.7
+    nmame: mysql57
+    ports:
+      - "13306:3306"
     volumes:
       - ./mysql/my.cnf:/etc/mysql/my.cnf
       - ./mysql/data:/var/lib/mysql
