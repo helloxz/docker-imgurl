@@ -6,7 +6,7 @@ services:
     volumes:
       - ./imgurl:/data/wwwroot/default
     ports:
-      - "880:80"
+      - "8880:80"
     restart:
       always
   mysql57:
