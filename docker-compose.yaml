@@ -1,0 +1,18 @@
+version: '3'
+services: 
+  imgurl: 
+    image: helloz/imgurl
+    volumes:
+      - ./imgurl:/data/wwwroot/default
+    restart:
+      always
+  mysql57:
+    image: mysql:5.7
+    volumes:
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+      - ./mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 95KeVtSp6MBC
+      TZ: Asia/Shanghai
+    restart:
+      always
