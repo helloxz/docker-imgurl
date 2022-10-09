@@ -2,7 +2,7 @@ version: '3'
 services: 
   imgurl: 
     image: helloz/imgurl
-    name: imgurl
+    container_name: imgurl
     volumes:
       - ./imgurl:/data/wwwroot/default
     ports:
@@ -11,7 +11,7 @@ services:
       always
   mysql57:
     image: mysql:5.7
-    name: mysql57
+    container_name: mysql57
     ports:
       - "13306:3306"
     volumes:
